@@ -1,0 +1,29 @@
+name: Deploy React Frontend (Self-Hosted)
+
+on:
+  push:
+    branches: [ata]
+    paths:
+      - 'web-app/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies and build React
+      working-directory: ./web-app
+      run: |
+        yarn install --frozen-lockfile  # Equivalent to `npm ci`
+        yarn build  # Replaces `npm run build`
+
+    - name: Deploy to web server directory
+      run: |
+        rm -rf /var/www/web-app/*
+        cp -r ./web-app/build/* /var/www/minio-console/

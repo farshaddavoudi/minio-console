@@ -135,7 +135,9 @@ const LoginCallback = () => {
           </CallBackContainer>
         }
         promoHeader={
-          <span style={{ fontSize: 28 }}>High-Performance Object Store</span>
+          <span style={{ fontSize: 28 }}>
+            ATA 33 High-Performance Object Store
+          </span>
         }
         promoInfo={
           <span style={{ fontSize: 14, lineHeight: 1 }}>

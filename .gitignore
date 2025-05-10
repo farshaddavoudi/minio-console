@@ -39,6 +39,10 @@ dist/
 
 web-app/node_modules/
 
+# Ignore build folder
+web-app/build/
+web-app/dist/
+
 # Ignore tls cert and key
 private.key
 public.crt

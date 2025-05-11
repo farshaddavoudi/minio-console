@@ -183,14 +183,6 @@ const Login = () => {
             >
               پشتیبانی
             </a>
-            {/*<span className={"separator"}>|</span>
-             <a
-              href="https://min.io/download/?ref=con"
-              target="_blank"
-              rel="noopener"
-            >
-              Download
-            </a> */}
           </Box>
         }
         promoHeader={

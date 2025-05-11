@@ -20,10 +20,10 @@ jobs:
     - name: Install dependencies and build React
       working-directory: ./web-app
       run: |
-        yarn install --frozen-lockfile  # Equivalent to `npm ci`
+        yarn install --immutable  # Equivalent to `npm ci`
         yarn build  # Replaces `npm run build`
 
     - name: Deploy to web server directory
       run: |
-        rm -rf /var/www/web-app/*
-        cp -r ./web-app/build/* /var/www/minio-console/
+        sudo rm -rf /var/www/web-app/*
+        sudo cp -r ./web-app/build/* /var/www/minio-console/

@@ -194,7 +194,7 @@ const Login = () => {
         }
         promoHeader={
           <span style={{ fontSize: 28 }}>
-            ATA 32 High-Performance Object Store
+            ATA 332 High-Performance Object Store
           </span>
         }
         promoInfo={

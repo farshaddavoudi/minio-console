@@ -273,6 +273,23 @@ export const generateOverrideTheme = (overrideVars: IEmbeddedCustomStyles) => {
         backgroundColor: overrideVars.boxBackground,
         textColor: overrideVars.fontColor,
       },
+      LoginWrapper: {
+        promoContainer: {
+          "& .promoContainer": {
+            backgroundColor: "#f5f5f5",
+            padding: "20px",
+            borderRadius: "8px",
+          },
+          "& .promoHeader": {
+            color: "#333",
+            marginBottom: "15px",
+          },
+          "& .promoInfo": {
+            color: "#666",
+            lineHeight: "1.5",
+          },
+        },
+      },
     };
   } catch (e) {
     console.warn("Invalid theme provided. Fallback to original theme.");

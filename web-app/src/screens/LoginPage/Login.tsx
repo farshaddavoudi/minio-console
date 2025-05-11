@@ -28,6 +28,7 @@ import { getLogoApplicationVariant, getLogoVar } from "../../config";
 import { RedirectRule } from "api/consoleApi";
 import { redirectRules } from "./login.utils";
 import { setHelpName } from "../../systemSlice";
+import "./login-overrides.css";
 
 export const getTargetPath = () => {
   let targetPath = "/browser";
@@ -163,49 +164,74 @@ const Login = () => {
               },
             }}
           >
-            <a href={docsURL} target="_blank" rel="noopener">
-              Documentation
+            <a href="https://ataair.ir" target="_blank" rel="noopener">
+              وب‌سایت آتا
             </a>
             <span className={"separator"}>|</span>
             <a
-              href="https://github.com/minio/minio"
+              href="https://home.ataair.ir"
               target="_blank"
               rel="noopener"
             >
-              GitHub
+              پرتال آتا
             </a>
             <span className={"separator"}>|</span>
             <a
-              href="https://subnet.min.io/?ref=con"
+              href="https://ataair.ir"
               target="_blank"
               rel="noopener"
             >
-              Support
+              پشتیبانی
             </a>
-            <span className={"separator"}>|</span>
-            <a
+            {/*<span className={"separator"}>|</span>
+             <a
               href="https://min.io/download/?ref=con"
               target="_blank"
               rel="noopener"
             >
               Download
-            </a>
+            </a> */}
           </Box>
         }
         promoHeader={
-          <span style={{ fontSize: 28 }}>
-            فضای ابری آتا
+          <span
+            style={{
+              fontSize: 33,
+            }}
+          >
+            فضای ابری امن و پرسرعت آتا
           </span>
         }
         promoInfo={
-          <span style={{ fontSize: 14, lineHeight: 1 }}>
-            MinIO is a cloud-native object store built to run on any
-            infrastructure - public, private or edge clouds. Primary use cases
-            include data lakes, databases, AI/ML, SaaS applications and fast
-            backup & recovery. MinIO is dual licensed under GNU AGPL v3 and
-            commercial license. To learn more, visit{" "}
-            <a href={"https://min.io/?ref=con"} target="_blank" rel="noopener">
-              www.min.io
+          <span
+            style={{
+              fontSize: 14,
+              lineHeight: 1.5,
+              color: "#333",
+              display: "block",
+            }}
+          >
+            فضای ابری آتا (ATA S3) یک سرویس ذخیره‌سازی ابری پرسرعت و امن برای
+            داده‌های شرکت هواپیمایی آتاست که روی زیرساخت سروری این شرکت پیاده
+            سازی شده و اجرا می‌شود. این سرویس برای مدیریت داده‌های سامانه‌ها،
+            داده‌های FTP، سیستم رزرواسیون و غیره استفاده می‌شود.
+            <br />
+            <a
+              href={"https://ataair.ir/"}
+              target="_blank"
+              rel="noopener"
+              style={{
+                color: "blue",
+                textDecoration: "none",
+              }}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.textDecoration = "underline")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.textDecoration = "none")
+              }
+            >
+              www.ataair.ir
             </a>
             .
           </span>

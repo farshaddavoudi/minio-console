@@ -1,0 +1,36 @@
+.promoContainer {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.promoHeader {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: right !important;
+}
+
+.promoInfo {
+  line-height: 1.5;
+  text-align: right !important;
+  max-width: inherit !important;
+}
+
+.promoInfo span {
+  color: white !important;
+  text-align: right !important;
+  font-size: 24px !important;
+}
+
+.promoInfo a {
+  color: blue;
+  text-decoration: none;
+}
+
+.promoInfo a:hover {
+  text-decoration: underline;
+}
+
+#alternativeMethods-select {
+  display: none !important;
+}

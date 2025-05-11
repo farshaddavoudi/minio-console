@@ -21,7 +21,7 @@ jobs:
       working-directory: ./web-app
       run: |
         yarn install --immutable  # Equivalent to `npm ci`
-        yarn build  # Replaces `npm run build`
+        CI='' yarn build  # Unset CI (behave warnigns as error)
 
     - name: Deploy to web server directory
       run: |

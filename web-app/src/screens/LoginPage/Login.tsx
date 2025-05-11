@@ -159,7 +159,7 @@ const Login = () => {
             }}
           >
             <a href="https://ataair.ir" target="_blank" rel="noopener">
-              وب‌سایت آتا
+              وبسایت آتا
             </a>
             <span className={"separator"}>|</span>
             <a

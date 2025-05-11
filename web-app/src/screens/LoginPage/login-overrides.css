@@ -34,3 +34,18 @@
 #alternativeMethods-select {
   display: none !important;
 }
+
+.logoContainer svg {
+  display: none !important;
+}
+
+.logoContainer::after {
+  content: "";
+  display: block;
+  background: url('../../assets/images/ata-logo.png') no-repeat center center;
+  background-size: contain;
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  transform: scale(1.5);
+}

@@ -135,8 +135,9 @@ const Login = () => {
       );
   }
 
-  let docsURL = "https://min.io/docs/minio/linux/index.html?ref=con";
-  if (isK8S) {
+  if (isK8S) {    
+    let docsURL = "https://min.io/docs/minio/linux/index.html?ref=con";
+
     docsURL =
       "https://min.io/docs/minio/kubernetes/upstream/index.html?ref=con";
   }
@@ -225,7 +226,7 @@ const Login = () => {
             >
               www.ataair.ir
             </a>
-            .
+            
           </span>
         }
         backgroundAnimation={backgroundAnimation}

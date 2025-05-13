@@ -60,8 +60,8 @@ const MenuWrapper = () => {
       displayGroupTitles
       options={allowedMenuItems}
       applicationLogo={{
-        applicationName: getLogoApplicationVariant(),
-        subVariant: getLogoVar(),
+        applicationName: "monitor",
+        subVariant: undefined,
       }}
       callPathAction={(path) => {
         navigate(path);

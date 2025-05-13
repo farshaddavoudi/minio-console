@@ -22,7 +22,7 @@ const CustomSidebarLogo: React.FC<CustomSidebarLogoProps> = ({
     }}
   >
     {
-      <img src={mlogo} style={{width:"73%", marginTop: "-5px"}} />
+      <img src={mlogo} style={{maxHeight: "150px"}} />
     
     /* <span
       style={{

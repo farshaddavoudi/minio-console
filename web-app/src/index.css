@@ -24,3 +24,8 @@ input.removeArrows[type="number"],
 .removeArrows input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* Overrides */
+.mainPage .page-header-actions button.button-regular#object_browser {
+  display: none !important;
+}

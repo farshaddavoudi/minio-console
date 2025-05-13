@@ -28,6 +28,7 @@ import {
 } from "../../../config";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getLicenseConsent } from "../License/utils";
+import CustomSidebarLogo from "../Common/Components/CustomSidebarLogo";
 
 const MenuWrapper = () => {
   const dispatch = useAppDispatch();
@@ -55,26 +56,29 @@ const MenuWrapper = () => {
   const allowedMenuItems = validRoutes(features, licenseNotification);
 
   return (
-    <Menu
-      isOpen={sidebarOpen}
-      displayGroupTitles
-      options={allowedMenuItems}
-      applicationLogo={{
-        applicationName: "monitor",
-        subVariant: undefined,
-      }}
-      callPathAction={(path) => {
-        navigate(path);
-      }}
-      signOutAction={() => {
-        navigate("/logout");
-      }}
-      collapseAction={() => {
-        dispatch(menuOpen(!sidebarOpen));
-      }}
-      currentPath={pathname}
-      mobileModeAuto={false}
-    />
+    <div style={{position: "relative"}}>
+      <div className="ataLogo" style={{position: "absolute", top:"1px", left: "0px", width: "100%", zIndex:1}}><CustomSidebarLogo inverse={true} /></div>
+      <Menu
+        isOpen={sidebarOpen}
+        displayGroupTitles
+        options={allowedMenuItems}
+        applicationLogo={{
+          applicationName: "monitor",
+          subVariant: undefined,
+        }}
+        callPathAction={(path) => {
+          navigate(path);
+        }}
+        signOutAction={() => {
+          navigate("/logout");
+        }}
+        collapseAction={() => {
+          dispatch(menuOpen(!sidebarOpen));
+        }}
+        currentPath={pathname}
+        mobileModeAuto={false}
+      />
+    </div>
   );
 };
 

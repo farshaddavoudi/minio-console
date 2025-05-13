@@ -29,3 +29,19 @@ input.removeArrows[type="number"],
 .mainPage .page-header-actions button.button-regular#object_browser {
   display: none !important;
 }
+
+.parentBox .menuBox .menuContainer .menuHeaderContainer .menuLogoContainer {
+  height: 100px !important;
+}
+
+.parentBox .menuBox.collapsed {
+  z-index: 3 !important;
+}
+
+.parentBox .menuBox .menuContainer .menuHeaderContainer .menuLogoContainer > svg {
+  display: none !important;
+}
+
+.parentBox .menuBox .menuContainer .menuHeaderContainer .collapseButton {
+  z-index: 10 !important;
+}

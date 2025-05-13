@@ -32,6 +32,8 @@ input.removeArrows[type="number"],
 
 .parentBox .menuBox .menuContainer .menuHeaderContainer .menuLogoContainer {
   height: 100px !important;
+  margin-top: 100px !important;
+  border-bottom: 1px solid #7c0000 !important;
 }
 
 .parentBox .menuBox.collapsed {
@@ -44,4 +46,24 @@ input.removeArrows[type="number"],
 
 .parentBox .menuBox .menuContainer .menuHeaderContainer .collapseButton {
   z-index: 10 !important;
+}
+
+.parentBox .menuBox {
+  background: linear-gradient(90deg, #b70000 0%, #9a0000 50%, #7c0000 100%) !important;
+}
+
+.menuBox .menuItems .httUSP.selected, .httUSP:hover {
+  background: linear-gradient(90deg, rgba(183, 0, 0, 0) 0%, #7c0000 100%) !important;
+}
+
+.menuBox .menuItems .menuHeader {
+  border-bottom: 1px solid #7c0000 !important;
+}
+
+.httUSP .iconContainer {
+  background-color: #8a0000 !important;
+}
+
+.collapsed .collapsedMenuHeader {
+  background: #8a0000 !important;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import mlogo from "../../../../assets/images/ata-menu-logo-transparent.png";
 
 export interface CustomSidebarLogoProps {
   onClick?: React.MouseEventHandler<any>;
@@ -20,7 +21,10 @@ const CustomSidebarLogo: React.FC<CustomSidebarLogoProps> = ({
       userSelect: "none",
     }}
   >
-    <span
+    {
+      <img src={mlogo} style={{width:"73%", marginTop: "-5px"}} />
+    
+    /* <span
       style={{
         fontWeight: 700,
         fontSize: 24,
@@ -41,7 +45,7 @@ const CustomSidebarLogo: React.FC<CustomSidebarLogoProps> = ({
       }}
     >
       Object Storage
-    </span>
+    </span> */}
   </div>
 );
 

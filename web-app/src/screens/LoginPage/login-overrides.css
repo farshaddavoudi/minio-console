@@ -2,6 +2,7 @@
   padding: 20px;
   border-radius: 8px;
   margin: 20px;
+  top: 140px !important;
 }
 
 .promoHeader {
@@ -12,7 +13,7 @@
 
 .promoInfo {
   line-height: 1.5;
-  text-align: right !important;
+  text-align: left !important;
   max-width: inherit !important;
   direction: rtl !important;
 }
@@ -36,6 +37,10 @@
   display: none !important;
 }
 
+.logoContainer {
+  height: 225px !important
+}
+
 .logoContainer svg {
   display: none !important;
 }
@@ -46,7 +51,11 @@
   background: url('../../assets/images/ata-logo.png') no-repeat center center;
   background-size: contain;
   width: 230px;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
-  transform: scale(1.5);
+  transform: scale(2);
+}
+
+.formPanel .formContainer {
+  min-height: calc(-225px + 100vh) !important;
 }

@@ -153,40 +153,57 @@ const Login = () => {
           <Box
             sx={{
               "& .separator": {
-                marginLeft: 4,
-                marginRight: 4,
+                marginLeft: 5,
+                marginRight: 5,
               },
             }}
           >
             <a href="https://ataair.ir" target="_blank" rel="noopener">
-              وبسایت آتا
+             🔗 Website
             </a>
             <span className={"separator"}>|</span>
-            <a
-              href="https://home.ataair.ir"
-              target="_blank"
-              rel="noopener"
-            >
-              پرتال آتا
+            <a href="https://home.ataair.ir" target="_blank" rel="noopener">
+             🏠 Home
             </a>
             <span className={"separator"}>|</span>
-            <a
-              href="https://ataair.ir"
-              target="_blank"
-              rel="noopener"
-            >
-              پشتیبانی
+            <a href="https://app.ataair.ir" target="_blank" rel="noopener">
+             ✈ App
+            </a>
+            <span className={"separator"}>|</span>
+            <a href="tel:02144695452" rel="noopener">
+            ☎ Support
             </a>
           </Box>
         }
         promoHeader={
-          <span
-            style={{
-              fontSize: 33,
-            }}
-          >
-            فضای ابری امن و پرسرعت آتا
-          </span>
+          <>
+            <span
+              style={{
+                fontSize: "40px",
+                lineHeight: "80px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "80px",
+                  background:
+                    "linear-gradient(to right, #8B0000, #FF6347, #FFA07A, #FFDAB9, #FFFFFF)",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  display: "inline",
+                }}
+              >
+                ATA
+              </span>{" "}
+              High-Performance
+            </span>
+            <span
+              style={{ fontSize: "66px", display: "flex", marginTop: "10px" }}
+            >
+              <span style={{ fontSize: "90px", marginRight: "13px" }}>S3</span>
+              <span>Object Storage</span>
+            </span>
+          </>
         }
         promoInfo={
           <span
@@ -194,7 +211,7 @@ const Login = () => {
               fontSize: 14,
               lineHeight: 1.5,
               color: "#333",
-              display: "block",
+              display: "none",
             }}
           >
             فضای ابری آتا (ATA S3) یک سرویس ذخیره‌سازی ابری پرسرعت و امن برای
@@ -219,7 +236,6 @@ const Login = () => {
             >
               www.ataair.ir
             </a>
-            
           </span>
         }
         backgroundAnimation={backgroundAnimation}

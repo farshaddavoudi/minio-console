@@ -4,9 +4,9 @@
 
 A graphical user interface for [MinIO](https://github.com/minio/minio)
 
-| Object Browser                     | Dashboard                     | 
+| Object Browser - Old                     | Object Browser - New                     | 
 |------------------------------------|-------------------------------|
-| ![Object Browser](images/pic3.png) | ![Dashboard](images/pic1.png) |
+| ![Object Browser](images/browse_old.png) | ![Dashboard](images/browse_new.png) |
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**

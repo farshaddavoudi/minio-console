@@ -1,8 +1,7 @@
 # MinIO Console
 
-![build](https://github.com/minio/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
-A graphical user interface for [MinIO](https://github.com/minio/minio)
+A customized graphical user interface for [MinIO](https://github.com/minio/minio)
 
 | Login Page - Old                     | Login Page - New                     | 
 |------------------------------------|-------------------------------|

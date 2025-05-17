@@ -12,4 +12,4 @@ A customized graphical user interface for [MinIO](https://github.com/minio/minio
 | ![Object Browser](images/browse_old.png) | ![Dashboard](images/browse_new.png) |
 
 
-([Original Readme](https://github.com/minio/console/blob/master/README.md))
+[Original Readme](https://github.com/minio/console/blob/master/README.md)
